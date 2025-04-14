@@ -1,0 +1,156 @@
+ /* Base styles */
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    color: rgb(3, 3, 3);
+    padding: 10px 0;
+    text-align: center;
+}
+img {
+    max-width: 1200px;
+    height: 700px;
+}
+iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 30px;
+    
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+/* Chart container */
+.chart-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Analysis section */
+.analysis-section {
+    margin: 30px 0;
+}
+
+.analysis-text {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+
+/* Card container styling */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 23%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 23%; /* Set a fixed width percentage */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1; /* Allow cards to grow equally */
+    min-width: 0; /* Allow cards to shrink below content size */
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+    color: #3498db;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.card li {
+    margin-bottom: 8px;
+    font-size: 14;
+}
+
+.sources-card {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer {
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        min-width: 100%;
+    }
+
+
+/* Responsive design adjustments */
+@media (max-width: 900px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+}

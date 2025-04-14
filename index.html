@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <title>Environmental Case Study</title>
+</head>
+<body>
+
+    <script src="script.js"></script>
+
+    <div class="header">
+        <div class="site-title">Temperature Analysis Dashboard</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
+        <a href="index.html">January Temperature Trends</a>
+        <a href="march.html">March Temperature Trends</a>
+        <a href="april.html">April Temperature Trends</a>
+        <a href="seasonal.html">Seasonal Comparisons</a>
+        <a href="about.html">About</a>
+      </div>
+
+
+
+    <header>
+        <h1>January Temperature Trends for Select Years (1980-2025)</h1>
+        <h3>A Data Science Project by Annie Francis | Data Scientist | Environmental Enthusiast</h3>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <hr width ="100%" size="2" color="black" align="center">
+            <div class="analysis-section">
+                <h2>Project Overview</h2>
+                <div class="analysis-text">
+                <p>This project explores January temperature trends in Annapolis, Maryland across six key years 
+                    between 1980 and 2025. Using a series of interactive visualizations—including line charts, 
+                    box plots, heatmaps, and bar graphs—this analysis highlights the variability and volatility 
+                    of winter temperatures in a coastal Mid-Atlantic city. Rather than revealing a simple warming 
+                    trend, the data exposes erratic fluctuations shaped by regional climate dynamics like the North 
+                    Atlantic Oscillation, polar vortex shifts, and oceanic influences from the nearby Chesapeake Bay.</p>
+
+                <p>By comparing both daily and monthly temperature patterns, this dashboard provides a nuanced view of how 
+                    climate instability, not just long-term warming, impacts local conditions. These insights are essential 
+                    for climate preparedness, infrastructure resilience, and ecological awareness in vulnerable coastal communities.</p>
+            </div>
+        </div>
+</div>
+
+    <div class="container">
+        <hr width ="100%" size="2" color="grey" align="center">
+        <div class="chart-container">
+            <iframe src="./visualizations/avg_january_temp_trend.html" frameborder="0"></iframe>
+        </div>
+        <div class="analysis-section">
+            <h3>Average Temperature Comparison</h3>
+            <div class="analysis-text">
+        <p>The analysis of January temperatures in Annapolis, Maryland over a 45-year period 
+            reveals fascinating patterns in our changing climate. The data shows dramatic 
+            fluctuations rather than a simple linear trend, challenging common assumptions about 
+            climate change in the Chesapeake Bay region. This analysis underscores the importance of long-term data collection and the complex nature of 
+            climate patterns in coastal regions like the Chesapeake Bay. While global warming remains a 
+            clear trend worldwide, regional and seasonal variations create a more nuanced picture that 
+            demands continued monitoring and research.</p>
+            </div>
+        </div>
+
+    <div class="card-container">
+        <div class="card">
+        <h4>Pattern Analysis:</h4>
+        <ul>
+            <li>No consistent warming or cooling trend is visible across the four-and-a-half decades</li>
+            <li>Major temperature peaks occurred in 1990 and 2020 (approximately 41°F)</li>
+            <li>Significant temperature drops followed each peak, with the post-2020 decline being especially dramatic</li>
+            <li>The lowest recorded average (31.2°F) occurred in 2025, representing a sharp 10-degree drop from just five years earlier</li>
+            <li>Overall temperature range spans approximately 12°F (31-42°F)</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>Regional Context:</h4>
+        <ul>
+            <li>These fluctuations reflect the complex climate dynamics of the Mid-Atlantic region</li>
+            <li>The Chesapeake Bay typically moderates temperature extremes, making these sharp variations particularly noteworthy</li>
+            <li>The patterns align with known climate oscillations affecting the Eastern Seaboard, including the North Atlantic Oscillation (NAO) and El Niño events</li>
+            <li>Recent polar vortex disruptions likely contributed to the sharp post-2020 temperature decline</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>Environmental Implications:</h4>
+        <ul>
+            <li>Annapolis faces unique climate challenges as a coastal community experiencing both warming waters and variable winter conditions</li>
+            <li>The accelerated warming of the Chesapeake Bay (warming faster than global averages) creates a complex interplay with atmospheric patterns</li>
+            <li>Urban development and sea level rise in the region further complicate the temperature dynamics</li>
+            <li>These patterns highlight the importance of distinguishing between global trends and local climate variations</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+        
+
+    <div class="container">
+        <hr width ="100%" size="2" color="grey" align="center">
+        <div class="chart-container">
+
+        <iframe src="./visualizations/jan_mega_line_plotly.html" frameborder="0"></iframe>
+            </div>
+        <div class="analysis-section">
+            <h3>Daily Temperature Comparison</h3>
+        <div class="analysis-text">
+            <p>The analysis of average daily temperatures for January across six key years (1980, 1990, 2000, 2010, 2020, and 2025) 
+                reveals just how variable winter weather can be in Annapolis, Maryland. Instead of a smooth progression over time, 
+                the graph highlights chaotic daily swings in temperature, often unrelated to broader long-term patterns. This 
+                granular view illustrates how regional climate systems, atmospheric disruptions, and even individual storm systems 
+                can strongly impact short-term climate behavior. It’s a reminder that while global trends are crucial, local daily 
+                patterns offer an essential window into real-life climate impacts.</p>
+        </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+            <h4>Pattern Analysis:</h4>
+            <ul>
+                <li>No year displayed a stable, predictable progression of temperatures across January—daily values frequently rose or dropped by 10–20°F overnight</li>
+                <li>1990 and 2020 featured warm spikes early in the month, exceeding 55–60°F, while 2000 dropped below 20°F multiple times, especially in the latter half</li>
+                <li>2025, though the coldest in overall monthly averages, still showed brief warm spells—a sign of volatility more than consistent cold</li>
+                <li>Every year showed sharp dips mid-month, possibly tied to mid-winter storm activity or polar vortex effects</li>
+                <li>Range of daily temperatures within a single year often spanned over 30°F, demonstrating extreme variability even within a short timeframe</li>
+            </ul>
+            </div>
+
+            <div class="card">
+                <h4>Regional Context</h4>
+                <ul>
+                    <li>Daily fluctuations reflect the highly dynamic winter weather patterns of the Mid-Atlantic U.S.</li>
+                    <li>Annapolis is especially vulnerable to sharp temperature changes due to its location between the Atlantic Ocean and continental weather systems, including cold Arctic air masses and warm oceanic surges</li>
+                    <li>These sharp contrasts are often influenced by regional patterns like the North Atlantic Oscillation (NAO) and Arctic Oscillation, which impact jet stream positioning and cold air outbreaks</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Environmental Implications</h4>
+                <ul>
+                    <li>Volatile winter temperatures can wreak havoc on ecosystems, agriculture, and infrastructure—especially in coastal cities like Annapolis</li>
+                    <li>Rapid freezing and thawing cycles threaten local flora, damage roads and infrastructure, and disrupt wildlife behavior</li>
+                    <li>Local residents may feel climate change more in these daily extremes than in slow average warming</li>
+                    <li>The data underscores the importance of daily monitoring systems and emergency planning, as extreme cold or warm events can occur suddenly and unpredictably</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container">
+            <hr width ="100%" size="2" color="grey" align="center">
+            <div class="chart-container">
+                <iframe src="./visualizations/jan_box_plotly.html" frameborder="0"></iframe>
+            </div>
+            <div class="analysis-section">
+                <h3>Temperature Variability By Year</h3>
+                <div class="analysis-text">
+                    <p>This box plot offers a deeper dive into the distribution and variability of January 
+                        temperatures across six selected years, from 1980 to 2025. Rather than looking at daily 
+                        or yearly averages alone, this visualization highlights the spread, central tendency, 
+                        and extreme outliers for each year. The red dashed line at 32°F serves as a key reference 
+                        point for freezing temperatures, illustrating how often and how drastically daily 
+                        temperatures dip below freezing—an important factor for ecosystems, infrastructure, and energy demand.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h4>Pattern Analysis:</h4>
+                    <ul>
+                        <li>2000 shows the widest spread, with temperatures ranging from below 20°F to nearly 60°F—marking it as a year of extreme winter volatility</li>
+                        <li>2020 and 1990 exhibit the highest median January temperatures (above 40°F), reinforcing prior analyses showing warming spikes in those years</li>
+                        <li>2025 and 2000 show frequent daily dips below freezing, with 2025 having a notably low median (~31°F), dipping just under the freezing line</li>
+                        <li>2010 and 1980 reflect more moderate spreads compared to 2000 or 2020, but still show meaningful variability</li>
+                        <li>Outliers appear in every year, with extreme highs above 55°F and lows near 15°F, emphasizing how unpredictable January weather can be</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Regional Context</h4>
+                    <ul>
+                        <li>Annapolis winters are shaped by competing oceanic warmth from the Chesapeake Bay and Arctic intrusions, which explains the wide interquartile ranges</li>
+                        <li>El Niño/La Niña cycles, the North Atlantic Oscillation (NAO), and polar vortex events likely explain years like 2000 and 2025 where extreme variability or cold dominates</li>
+                        <li>Despite an upward global trend in temperatures, local effects in Annapolis—such as bay breezes, urban development, and regional storm tracks—shape these inconsistent winter patterns</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Environmental Implications</h4>
+                    <ul>
+                        <li>Years like 2025 pose major challenges for public services and wildlife, as consistently freezing conditions increase heating demands and freeze–thaw damage risks</li>
+                        <li>Years like 2000, with high variability, may confuse plant life, causing premature blooming or crop damage from cold snaps</li>
+                        <li>Infrastructure planning must account for years with large temperature swings and numerous freeze events, even if average temps suggest milder conditions</li>
+                        <li>The plot emphasizes the need for localized climate adaptation strategies, especially in vulnerable coastal cities like Annapolis</li>
+                    </ul>
+                </div>
+        </div>
+
+        <hr width ="100%" size="2" color="grey" align="center">
+
+    <div class="container">
+        <div class="chart-container">
+            <iframe src="./visualizations/jan_bar_plotly.html" frameborder="0"></iframe>
+        </div>
+        <div class="analysis-section">
+            <h3>Decade-by-Decade Temperature Comparison</h3>
+            <div class="analysis-text">
+                <p>This bar chart presents a clear, comparative view of average January 
+                    temperatures in Annapolis, MD, over six selected years from 1980 to 2025. 
+                    Unlike line graphs or box plots that show fluctuations and variability, this 
+                    visualization offers a concise snapshot of how each year stacks up in terms 
+                    of overall warmth. The use of a color gradient reinforces key takeaways — 
+                    with 2025 shown in deep red as the coldest, and 2020/1990 in dark blue as the warmest years in the dataset.</p>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h4>Pattern Analysis:</h4>
+                <ul>
+                    <li>Warmest Years: 2020 (40.6°F) and 1990 (40.3°F) were the two hottest Januarys, both breaking the 40°F mark</li>
+                    <li>Coldest Year: 2025 recorded an average of 31.2°F, a nearly 10-degree drop from 2020</li>
+                    <li>Gradual Trends?: No steady warming or cooling trend is visible — temperatures rise and fall irregularly across the decades</li>
+                    <li>Most Consistent Years: 2000 and 2010 hovered close together (around 34–35°F), suggesting more average winter conditions</li>
+                    <li>The total range spans just under 10°F, but that difference can mean the contrast between frequent freezes and mostly above-freezing days</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Regional Context</h4>
+                <ul>
+                    <li>This snapshot aligns with episodic warming and cooling patterns common in the Mid-Atlantic, driven by shifting air masses and large-scale climate oscillations</li>
+                    <li>The sharp contrast between 2020 and 2025 highlights the impact of Arctic air events, likely tied to polar vortex shifts or NAO phase changes</li>
+                    <li>The Chesapeake Bay's influence may have buffered some years (like 1990 and 2020) from deeper freezes, while others (2025) reflect broader regional cold outbreaks</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Environmental Implications</h4>
+                <ul>
+                    <li>A shift from 40.6°F in 2020 to 31.2°F in 2025 affects everything from wildlife hibernation cycles to utility demand</li>
+                    <li>Colder years increase energy costs, road maintenance needs, and stress on coastal infrastructure due to freeze–thaw cycles</li>
+                    <li>These inconsistencies make it difficult to rely solely on annual averages — reinforcing the importance of looking at local, seasonal, and daily data alongside global trends</li>
+                    <li>The visualization supports the idea that climate instability, rather than linear warming, may be the more pressing local concern in the short term</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr width ="100%" size="2" color="grey" align="center">
+
+        <div class="container">
+            <div class="chart-container">
+                <iframe src="./visualizations/jan_heatmap_plotly.html" frameborder="0"></iframe>
+            </div>
+            <div class="analysis-section">
+                <h3>Temperature Heatmap Analysis</h3>
+                <div class="analysis-text">
+                    <p>This heatmap visualization reveals detailed day-by-day temperature patterns for 
+                        January across six selected years (1980–2025) in Annapolis, Maryland. The chart 
+                        uses a red-to-blue color scale to show warm and cold days, respectively, 
+                        providing an intuitive visual cue to spot unusual heat or cold events. By 
+                        comparing each row, you can see how winter temperatures have fluctuated across 
+                        decades—not just in averages, but in how temperatures shift throughout the month.</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h4>Pattern Analysis:</h4>
+                    <ul>
+                        <li>2000 stands out for extreme contrast — early January has multiple hot spikes (55–60°F) while the second half of the month plunges into cold blues, showing rapid swings</li>
+                        <li>020 has a more balanced but fluctuating pattern — early warmth, a mid-month cold snap, and then milder temps again by the end</li>
+                        <li>2010 appears the most stable, with much of the month hovering in the mid-blue range (30s)</li>
+                        <li>1990 and 2000 both show intense heat events clustered around mid-month</li>
+                        <li>2025, though not shown explicitly here, would likely display deep blue coloring if included—suggesting sustained cold similar to 2010</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Regional Context</h4>
+                    <ul>
+                        <li>The Mid-Atlantic is a hotspot for temperature variability due to clashing air masses—warm southern flow vs. Arctic intrusions</li>
+                        <li>This pattern often leads to freeze–thaw cycles within a single week, clearly visible in years like 2000 and 1990</li>
+                        <li>The Chesapeake Bay usually moderates extreme temps, but this heatmap shows several exceptions, likely due to NAO phases, polar vortex shifts, and coastal storm tracks</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Environmental Implications</h4>
+                    <ul>
+                        <li>This kind of detailed data is vital for agriculture, energy planning, and emergency response, as day-to-day variations can cause real disruption</li>
+                        <li>High variability increases the risk of crop damage, infrastructure wear, and health impacts from sudden freezes or warm-ups</li>
+                        <li>The recurring pattern of abrupt warm and cold spells shows why yearly averages aren’t enough—local systems must prepare for increasingly chaotic winter conditions</li>
+                        <li>Encourages investment in real-time monitoring and climate adaptation tools for vulnerable coastal regions like Annapolis</li>
+                    </ul>
+                </div>
+            </div>
+
+    <hr width ="100%" size="2" color="grey" align="center">
+
+    <div class="container">
+        <div class="chart-container">
+            <iframe src="./visualizations/jan_facet_plotly.html" frameborder="0"></iframe>
+        </div>
+        <div class="analysis-section">
+            <h3>Small Multiples Comparison</h3>
+            <div class="analysis-text">
+                <p>This multi-panel plot compares daily January temperatures across six key years: 
+                    1980, 1990, 2000, 2010, 2020, and 2025. By isolating each year in its own mini-chart, 
+                    the visualization makes it easier to observe unique temperature trends and 
+                    disruptions within each month—without the confusion of overlapping lines. This 
+                    format highlights how wildly different January can feel from year to year, 
+                    especially in a transitional coastal region like Annapolis.</p>
+            </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h4>Pattern Analysis:</h4>
+                <ul>
+                    <li>1990 and 2020 stand out for consistently high temperatures, with several days peaking above 50°F</li>
+                    <li>2000 shows a steep decline from early-month warmth (near 60°F) to prolonged cold at the end—one of the most dramatic intra-month shifts</li>
+                    <li>2025 remains relatively cold throughout, dipping below freezing for much of the month before a brief rebound at the end</li>
+                    <li>2010 shows a sudden spike near day 27, likely tied to a short-lived warm front or coastal storm anomaly</li>
+                    <li>1980 was moderate, fluctuating between 30°F and 45°F but never reaching the extremes of later years</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Regional Context</h4>
+                <ul>
+                    <li>This visualization reinforces how January weather in the Mid-Atlantic is governed by chaotic air mass interactions, with warm southern systems and Arctic air battling for control</li>
+                    <li>2020 and 1990 may reflect positive NAO phases, favoring warmer, wetter conditions along the coast</li>
+                    <li>2000 and 2025 could indicate negative NAO or polar vortex breakdowns, allowing cold Arctic air to dominate</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Environmental Implications</h4>
+                <ul>
+                    <li>The lack of consistency from year to year complicates climate planning: what looks like a mild winter one year could turn dangerously cold the next</li>
+                    <li>Rapid warm/cold swings within the same month, like in 2000, are particularly damaging for agriculture, roadways, and ecosystems</li>
+                    <li>The 2025 pattern of sustained cold can increase energy demand, heating costs, and health risks, particularly in vulnerable populations</li>
+                    <li>This reinforces the need for resilient infrastructure and flexible adaptation strategies, especially in coastal cities sensitive to both air and water temperature changes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        
+
+<div class="container">
+    <hr width ="100%" size="2" color="grey" align="center">
+    <div class="analysis-section">
+        <h3>Key Findings and Implications</h3>
+        <div class="analysis-text">
+        <p>The analysis reveals that January temperatures in Annapolis, Maryland are marked more by volatility and irregularity 
+            than a straightforward warming trend. While 1990 and 2020 recorded notably high average temperatures, 2025 showed a 
+            dramatic cold drop, underscoring the region’s susceptibility to polar air intrusions and coastal weather dynamics. 
+            Daily fluctuations of 20–30°F within a single month were common, presenting real challenges for agriculture, 
+            infrastructure, and energy systems. These findings highlight the importance of localized climate monitoring, and 
+            they reinforce the need to plan for instability rather than just gradual warming in coastal Mid-Atlantic communities.</p>
+        </div>
+    </div>
+</div>
+    
+<div>
+        <hr width ="100%" size="2" color="grey" align="center">
+    <div class="analysis-section">
+        <h3>About the Author</h3>
+        <div class="analysis-text">
+            <p>Annie Francis is a data scientist-in-training with a strong focus on environmental analytics, geospatial modeling, and 
+            climate data visualization. She is currently pursuing a B.S. in Data Science at the University of Maryland Global Campus 
+            and has academic experience working with climate, hydrological, and ecological datasets. Annie is particularly interested 
+            in applying machine learning and statistical analysis to real-world sustainability challenges, such as water quality monitoring 
+            and climate resilience planning. Her work integrates technical skills in Python, Pandas, and data visualization libraries with a 
+            commitment to making complex environmental trends both understandable and actionable for wider audiences.</p>
+        </div>
+        <p>
+            <a href="https://www.linkedin.com/in/annie-francis-8a6014232/">LinkedIn</a>
+            <a href="https://github.com/annielauren002">Github</a>
+        </p>
+    </div>
+</div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Annie Francis. All rights reserved. Data sourced from NOAA NCEI.</p>
+    </footer>
+</body>
+</html>
